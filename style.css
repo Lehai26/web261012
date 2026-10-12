@@ -1,0 +1,90 @@
+body {
+    font-family: 'Noto Sans KR', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    animation: titleEffect 1.5s infinite;
+}
+
+/* Hiệu ứng phóng to và thu nhỏ tiêu đề */
+@keyframes titleEffect {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.07);
+    }
+}
+
+
+.card {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(245, 197, 24, 0.65);
+}
+
+
+.poster {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #f5c518;
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+.info {
+    flex: 1;
+}
+
+.year {
+    color: #777;
+}
+
+.overview {
+    line-height: 1.6;
+}
+
+footer {
+    max-width: 540px;
+    margin: 30px auto 0;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+}
+
+footer a {
+    color: inherit;
+}
